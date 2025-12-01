@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assembleia De Deus Manancial Serra Azul</title>
+    <link rel="shortcut icon" href="logo icone da igreja.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+    <header class="header">
+        <div class="container header-container">
+            <h1 class="logo">
+                <img src="logo da igreja.png" alt="Logo da Igreja" class="logo-img" />
+                Assembleia De Deus Manancial Serra Azul
+            </h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#top">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#eventos">Programação</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>"Portanto, enquanto temos oportunidade, façamos o bem a todos, especialmente aos da família da fé."</h2>
+            <p>Gálatas 6:10</p>
+            <a href="#eventos" class="btn-primary">Veja os Eventos</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="about container">
+        <h2>Sobre Nossa Igreja</h2>
+        <p style="text-align: justify;">
+            A Assembleia de Deus do nosso condomínio é uma igreja de estrutura simples, mas de alma generosa e coração cheio de fé. Mais do que um local de culto, é um espaço onde vidas se encontram, histórias se entrelaçam e a presença de Deus é sentida em cada gesto, em cada palavra, em cada oração.
+
+            Nossa trajetória é feita de momentos que marcaram profundamente a comunidade: risos de crianças que cresceram entre os bancos, lágrimas silenciosas de quem buscava consolo, abraços sinceros nos dias difíceis, e louvores que ecoaram como expressão de esperança. Aqui, ninguém passa despercebido quem chega é acolhido com carinho, quem sofre encontra apoio, e quem busca a Deus encontra força para seguir.
+
+            Os cultos acontecem com regularidade e são vividos com intensidade. A música que entoamos une corações, e as celebrações que realizamos deixam marcas duradouras na alma. Não somos perfeitos, mas caminhamos com sinceridade, fé viva, amor ao próximo e disposição para servir.
+
+            Esta igreja é, acima de tudo, uma casa de Deus. Um lar simples, sim mas onde o amor é verdadeiro, constante e capaz de transformar vidas.
+        </p>
+        <div class="carousel">
+            <button class="carousel-btn prev" aria-label="Imagem anterior">&#10094;</button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                        <img src="imagem da igreja fachada.png" alt="Comunidade da igreja 1" />
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="imagem da igreja 6.png" alt="Comunidade da igreja 2" />
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-btn next" aria-label="Próxima imagem">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="galeria" class="gallery container">
+        <h2>Galeria de Imagens</h2>
+        <div class="carousel gallery-carousel">
+            <button class="carousel-btn prev" aria-label="Imagem anterior">&#10094;</button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                        <img src="imagem da igreja 2.png" alt="Imagem da igreja 1" />
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="imagem da igreja 4.png" alt="Imagem da igreja 2" />
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="imagem da igreja entrada.png" alt="Imagem da igreja 3" />
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="imagem da igreja quadro.png" alt="Imagem da igreja 3" />
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="imagem da igreja cadeiras.png" alt="Imagem da igreja 4" />
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="imagem da igreja 5.png" alt="Imagem da igreja 5" />
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-btn next" aria-label="Próxima imagem">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="eventos" class="events container">
+        <h2>Culto Semanais</h2>
+        <div class="event-list">
+            <article class="event-card">
+                <h3>Domingos</h3>
+                <p>Escola bíblica dominical: 9:00 às 10:30</p>
+                <p>Culto: 18:00 às 20:00</p>
+            </article>
+            <article class="event-card">
+                <h3>Terças - Feiras</h3>
+                <p>Culto de Ensino: 19:30 às 21:00</p>
+                <p>Venha louvar conosco e fortalecer sua fé.</p>
+            </article>
+            <article class="event-card">
+                <h3>Sábados</h3>
+                <p>Consagração: 9:00 às 10:00</p>
+            </article>
+        </div>
+        <div class="events">
+            <img src="calendario igreja 1.png" alt="Imagem relacionada aos eventos" onclick="openModal(this)">
+            <img src="calendario igreja 2.png" alt="Imagem relacionada aos eventos" onclick="openModal(this)">
+            </div>
+
+            <!-- Modal de Zoom -->
+            <div id="imgModal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImg">
+        </div>
+    </section>
+
+    <section id="localizacao" class="location container">
+        <h2>Localização</h2>
+        <div class="location-content">
+            <div class="address">
+                <p><strong>Assembleia De Deus Manancial Serra Azul</strong></p>
+                <p>SH Mansões Sobradinho Q 35 - Sobradinho II, Brasília - DF</p>
+                <p>CEP: 73083-750</p>
+                <p>Brasil</p>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1533.9999999999998!2d-47.8546311!3d-15.6337453!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a473ac1c1a671%3A0xf7fc745e4f03260b!2sAssembleia%20De%20Deus%20Manancial%20Serra%20Azul!5e0!3m2!1spt-BR!2sbr!4v1680000000000!5m2!1spt-BR!2sbr"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa Assembleia De Deus Manancial Serra Azul"
+                ></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact container">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para dúvidas, sugestões ou para participar de nossas atividades.</p>
+        <ul class="contact-info">
+            <li><strong>Email:</strong>igmanancialserrazul@gmail.com</li>
+            <li><strong>Instagram:</strong> @manancialserraazul</li>
+            <li><strong>Endereço:</strong> SH Mansões Sobradinho Q 35 - Sobradinho II, Brasília - DF, CEP: 73083-750</li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Assembleia De Deus Manancial Serra Azul - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        function openModal(img) {
+        const modal = document.getElementById("imgModal");
+        const modalImg = document.getElementById("modalImg");
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+        }
+
+        function closeModal() {
+            document.getElementById("imgModal").style.display = "none";
+        }
+    </script>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
